@@ -3,7 +3,13 @@ uuid = "f99f42b8-f1d0-40fe-9dc3-6a6961ec8c82"
 authors = ["Tim Holy <tim.holy@gmail.com> and contributors"]
 version = "0.1.0"
 
+[deps]
+BenchmarkTools = "6e4b80f9-dd63-53aa-95a3-0cdb28fa8baf"
+ProfileView = "c46f51b8-102a-5cf2-8d2c-8597cb0e0da7"
+
 [compat]
+BenchmarkTools = "1"
+ProfileView = "0.6.11"
 julia = "1"
 
 [extras]
