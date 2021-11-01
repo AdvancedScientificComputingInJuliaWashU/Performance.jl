@@ -5,5 +5,6 @@ module Performance
 
 include("globals.jl")
 include("arrays.jl")
+include("structs.jl")
 
 end
