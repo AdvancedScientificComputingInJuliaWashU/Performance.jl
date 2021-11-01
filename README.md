@@ -10,7 +10,7 @@ For this homework, start from the `test/runtests.jl` file, which mostly just `in
 Open them one-by-one and read the comments that describe the problems to be solved.
 These individual test files start with one or more links, usually to sections of the Julia manual's [Performance tips](https://docs.julialang.org/en/v1/manual/performance-tips/) page. Start by reading those pages/sections for background information that will help in solving this problem.
 
-Solve the problems by modifying the file of the same name in `src/`, *not* by modifying the tests.
+Solve the problems by modifying the file of the same name in `src/`, *not* by modifying the tests (unless explicitly instructed to so do).
 One exception to this rule is the `ntests_finished` at the top of `runtests.jl`: if you're bothered by failures of the
 tests you haven't yet fixed, just set this to the number of files whose tests you want to run. For example, to run
 just the tests in `test/globals.jl`, set `ntests_finished = 1`. If you do modify `ntests_finished`,
