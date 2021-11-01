@@ -20,7 +20,7 @@ using Test
     @test @inferred(a[2]) === 20
     @test @inferred(a[4]) === 0
     # This one is trickier. See https://docs.julialang.org/en/v1/manual/constructors/#Parametric-Constructors
-    # for help. You should use `promote_type` in your solution.
+    # for help. See `?promote_type` as a hint for crafting your solution.
     a = DefaultArray(Float32[10, 20, 30], 0)
     @test @inferred(a[2]) === 20.0f0
     @test @inferred(a[4]) === 0.0f0
