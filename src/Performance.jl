@@ -4,5 +4,6 @@ module Performance
 # the `export`s are made from each file individually.
 
 include("globals.jl")
+include("arrays.jl")
 
 end
