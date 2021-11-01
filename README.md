@@ -22,6 +22,6 @@ Some problems might say "See `?somefunction`," which means you should read the h
 Finally, a couple of notes about this repository:
 - when creating it, I deliberately left out the `Documenter` and `Codecov` plugins since neither is needed
 for this assignment.
-- some packages like ProfileView are listed as depenencies of this repository. This is for your convenience, but
+- I listed `BenchmarkTools` as a depenency of this repository. This is for your convenience, but
   any real package generally shouldn't include such dependencies. Put them in your default environment instead,
   reserving the package environment for things actually needed by the package.
