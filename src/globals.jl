@@ -4,10 +4,10 @@ charset = 'a':'z'
 
 getchar(idx) = charset[idx]
 
-homedir = "/home/tim"
+homedir = "wrong"
 
 function set_homedir(path)
-    homedir = path
+    global homedir = path
 end
 get_homedir() = homedir
 

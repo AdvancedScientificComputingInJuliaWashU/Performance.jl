@@ -21,7 +21,7 @@ using Test
     # Check `@code_warntype` again at the end to see that you've fixed it!
 
     # The next two tests should pass even at the outset
-    @test get_homedir() == "/home/tim"
+    @test get_homedir() == "wrong"
     set_homedir(ENV["HOME"])
     @test get_homedir() == ENV["HOME"]
     # This one will fail. But you can't make the value constant and still update it.
