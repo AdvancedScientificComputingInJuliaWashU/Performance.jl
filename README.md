@@ -1,4 +1,4 @@
-# Performance
+# Performance (part 1)
 
 [![Build Status](https://github.com/AdvancedScientificComputingInJuliaWashU/Performance.jl/workflows/CI/badge.svg)](https://github.com/AdvancedScientificComputingInJuliaWashU/Performance.jl/actions)
 
