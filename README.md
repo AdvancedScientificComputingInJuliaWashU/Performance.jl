@@ -8,7 +8,7 @@ This assignment has two goals:
 
 For this homework, start from the `test/runtests.jl` file, which mostly just `include`s a number of individual test files.
 Open them one-by-one and read the comments that describe the problems to be solved.
-These individual test files start with one or more links, usually to sections of the Julia manual's [Performance tips](https://docs.julialang.org/en/v1/manual/performance-tips/) page. Start by reading those pages/sections for background information that will help in solving this problem.
+These individual test files may contain one or more links, usually to sections of the Julia manual's [Performance tips](https://docs.julialang.org/en/v1/manual/performance-tips/) page. Read those pages/sections for background information that will help in solving this problem.
 
 Solve the problems by modifying the file of the same name in `src/`, *not* by modifying the tests (unless explicitly instructed to so do).
 One exception to this rule is the `ntests_finished` at the top of `runtests.jl`: if you're bothered by failures of the
@@ -22,6 +22,9 @@ Some problems might say "See `?somefunction`," which means you should read the h
 Finally, a couple of notes about this repository:
 - when creating it, I deliberately left out the `Documenter` and `Codecov` plugins since neither is needed
 for this assignment.
-- I listed `BenchmarkTools` as a depenency of this repository. This is for your convenience, but
-  any real package generally shouldn't include such dependencies. Put them in your default environment instead,
-  reserving the package environment for things actually needed by the package.
+- I listed `BenchmarkTools` and `Cthulhu` as dependencies of this repository.
+  This is for your convenience, but any real package shouldn't include "developer environment" dependencies.
+  (One exception is if the package's actual code leverages and/or extends those packages.)
+  Put them in your default environment instead, reserving the package environment for things actually needed by the package.
+  Or, if the tests depend on one of them, list them in the `[extras]` section rather than the `[deps]`
+  section of `Project.toml`.

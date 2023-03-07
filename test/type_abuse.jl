@@ -4,9 +4,12 @@ using Test
 @testset "type abuse" begin
     ##
     ## Sometimes when people start getting excited about multiple dispatch, they start trying to
-    ## to solve every problem as a dispatch problem. This works well in some circumstances and badly
+    ## to solve *every* problem as a dispatch problem. This works well in some circumstances and badly
     ## in others. This problem will illustrate that dispatch is not "magic": when types can't
     ## be predicted in advance, you're better off doing more at runtime and less via the type system.
+    ##
+    ## As with other cases, this feels artificial but it is a prototype of how some might implement
+    ## a calculator program.
     ##
 
     numbers = [15, 3, 6, 11, 4]
