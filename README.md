@@ -2,9 +2,7 @@
 
 [![Build Status](https://github.com/AdvancedScientificComputingInJuliaWashU/Performance.jl/workflows/CI/badge.svg)](https://github.com/AdvancedScientificComputingInJuliaWashU/Performance.jl/actions)
 
-This assignment has two goals:
-- it coaches you in good Julia practices, avoiding traps that can kill performance. By and large, this is an exercise in avoiding patterns that result in poor type inference, and in experimenting with tools that help you detect, diagnose, and resolve inference problems.
-- it introduces a few concepts from the analysis of algorithms, specifically the "big-O" notation and its use in evaluating implementations.
+This assignment coaches you in good Julia practices, avoiding traps that can kill performance. By and large, this is an exercise in avoiding patterns that result in poor type inference, and in experimenting with tools that help you detect, diagnose, and resolve inference problems.
 
 For this homework, start from the `test/runtests.jl` file, which mostly just `include`s a number of individual test files.
 Open them one-by-one and read the comments that describe the problems to be solved.
