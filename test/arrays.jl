@@ -9,7 +9,7 @@ using Test
     ##
     seq3 = sequence_of_three(17)
     @test seq3 == [17, 18, 19]
-    @test @inferred(seq3[2]) == 18    # to diagnose this failure, look at the type of `seq3` and `@descend` into `sequence_of_three`
+    @test @inferred(seq3[2]) == 18    # to diagnose this failure, look at the type of `seq3` and then `@descend sequence_of_three(17)` (with Cthulhu)
     seq3 = sequence_of_three(17.5)
     @test seq3 == [17.5, 18.5, 19.5]
     @test @inferred(seq3[2]) == 18.5
