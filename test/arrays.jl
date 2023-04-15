@@ -27,6 +27,7 @@ using Test
     vbad = alternate_items_bad(10^4, 3, 4)
     bbad = @benchmark(sum($vbad), samples=100, evals=10)
     vgood = alternate_items(10^4, 3, 4)
+    @test vbad == vgood
     @test isconcretetype(eltype(vgood))
     bgood = @benchmark(sum($vgood), samples=100, evals=10)
     @test 10*minimum(bgood).time < minimum(bbad).time
@@ -36,6 +37,8 @@ using Test
     # to handle the cases below.
     # If you need a hint, see https://julialang.org/blog/2018/08/union-splitting/
     v = alternate_items(10^4, missing, 4)
+    vbadm = alternate_items_bad(10^4, missing, 4)
+    @test v == vbadm
     @test @inferred(sum(skipmissing(v))) == 4*10^4
     # Note: while this example is artificial, there turn out
     # to be *many* cases where you want to create a struct that can hold
