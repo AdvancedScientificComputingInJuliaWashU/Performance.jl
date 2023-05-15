@@ -38,7 +38,7 @@ using Test
     # If you need a hint, see https://julialang.org/blog/2018/08/union-splitting/
     v = alternate_items(10^4, missing, 4)
     vbadm = alternate_items_bad(10^4, missing, 4)
-    @test v == vbadm
+    @test isequal(v, vbadm)
     @test @inferred(sum(skipmissing(v))) == 4*10^4
     # Note: while this example is artificial, there turn out
     # to be *many* cases where you want to create a struct that can hold
